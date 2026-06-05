@@ -1,2 +1,3 @@
-# self-hosted-lab
-An individual lab infrastructure that will be build, documented, monitored and secured as part of the "Infrastructure Lab Workshop" using Open Source Services, Linux and Docker.
+### self-hosted-lab
+Documentation of the creation, monitoring and troubleshooting of a lab infrastructure built as part of the "Infrastructure Lab Workshop".
+This will include using Open Source Services, Linux and Docker.
