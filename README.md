@@ -1,4 +1,4 @@
-### self-hosted-lab
+### Self Hosted Lab Infrastructure
 <p> Documentation of the creation, monitoring and troubleshooting of a self-hosting lab infrastructure built as part of the <br>
 "<b>Infrastructure Lab Workshop</b>".<br>
 This will include using Open Source Services, Linux and Docker.</p>
