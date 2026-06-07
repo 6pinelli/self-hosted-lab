@@ -12,7 +12,7 @@ Session 2 actioned the following items:
   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-03-installUB.jpg" alt="Ubuntu Install BridgeAdapter" width="500">
 
   Create credentials:\
-  <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-04-installUB.jpg" alt="Ubuntu Install Credentials" width="500">
+  <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-04-installUB.jpg" alt="Ubuntu Install Credentials" width="600">
 \
   (Once installed, reboot machine, log in with created credentials)
 
@@ -22,7 +22,11 @@ Session 2 actioned the following items:
 ```
    ip a
 ```
-    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-05-ip.jpg" alt="ip a" width="600">
+\
+    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-05-ip.jpg" alt="ip a" width="500">
+
+
+
 
 ## Accesse Ubuntu Server for basic setup and first steps via SSH from Host Terminal
 
@@ -49,22 +53,27 @@ Return name of current machine/host:
 ```
 hostname
 ```
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-06-whoami.jpg" alt="whoamihostname" width="500">
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-06-whoami.jpg" alt="whoamihostname" width="400">
+   <i>here:</i> username: labuser, host: ubuntu-lab
 
+<br>
+<br>
+- Determine available disk space:<br>
+  (disk free -humanreadable)<br>
 
-- Determine available disk space:\
-(disk free -humanreadable)
 ```
 df -h
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-07-df.jpg" alt="Disk Free" width="500">
-
+<br>
+   <i>here:</i> device "sda2" has a total capacity of 25 GB of which 6.8 GB are used and 17 GB are available (30% used)
 
 - Determine memory usage (RAM - h for human readable):
 ```
 free -h
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-08-free.jpg" alt="Free" width="500">
+
 
 
 - Query system log entries (here the last 20)
