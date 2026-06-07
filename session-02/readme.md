@@ -22,7 +22,7 @@ sudo apt update
 - Confirm and upgrade system to all available updates with option -y \
   (will confirm upgrade requests with yes for all available updates)
 ```
-sudo apt upgrade -y (will upgrade to all available updates)
+sudo apt upgrade -y
 ```
 
 Testing tools used for troule shooting and baseline:
