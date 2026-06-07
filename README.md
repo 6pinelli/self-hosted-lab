@@ -8,7 +8,7 @@ This will include using Open Source Services, Linux and Docker.</p>
 ## Services to be used
 Function             | Service used                         | Functional Description                                 | Status
 | :--- | :--- | :--- | :--- |
-As foundation        | Ubuntu Server VM through Virtual Box | Industry Standard Desktop less Server                  | <ul><li> -[ ] </li></ul>
+As foundation        | Ubuntu Server VM through Virtual Box | Industry Standard Desktop less Server                  | <ul><li> -[x] </li></ul>
 Container runtime    | Docker and Docker Compose            | Hosting services below                                 | <ul><li> -[ ] </li></ul>
 DNS/Ad-blocking      | Pi-hole                              | DNS filtering, log visibility                          | <ul><li> -[ ] </li></ul>
 Files/Photo backup   | File Browser, Immich                | Volumes, persistant storage, Multi-container, databases | <ul><li> -[ ] </li></ul>
