@@ -58,6 +58,7 @@ hostname
 
 <br>
 <br>
+
 - Determine available disk space:<br>
   (disk free -humanreadable)<br>
 
@@ -67,13 +68,21 @@ df -h
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-07-df.jpg" alt="Disk Free" width="500">
 <br>
    <i>here:</i> device "sda2" has a total capacity of 25 GB of which 6.8 GB are used and 17 GB are available (30% used)
+  
+<br>
+<br>
 
-- Determine memory usage (RAM - h for human readable):
+- Determine memory usage (RAM - h for human readable):<br>
+
 ```
 free -h
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-08-free.jpg" alt="Free" width="500">
-
+<br>
+   <i>here:</i> 3.3 Gi total RAM, thereof 2.1 Gi unused (free)
+  
+<br>
+<br>
 
 
 - Query system log entries (here the last 20)
@@ -83,6 +92,7 @@ sudo journalctl -n 20
 Output will read: Date, Time, Hostname, Process/Service Name, Process ID, Message
 
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-09-journal.jpg" alt="System Logs" width="500">
+<br>
 
 
 - Life Dashboard of processes with top command (table of process)
