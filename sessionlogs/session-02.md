@@ -33,24 +33,24 @@ Update Ubuntu to most recent versions:
 
 - Get list of all available updates:
 ```
-sudo apt update
+  sudo apt update
 ```
 - Confirm and upgrade system to all available updates with option -y \
   (will confirm upgrade requests with yes for all available updates)
 ```
-sudo apt upgrade -y
+  sudo apt upgrade -y
 ```
 
-Testing tools used for troule shooting and baseline:
+Testing tools used for trouble shooting and baseline:
 
 - Confirm User and Hostname working on:\
-Who am I option will return current user name
+  Who am I option will return current user name
 ```
-whoami
+  whoami
 ```
-Return name of current machine/host:
+  Return name of current machine/host:
 ```
-hostname
+  hostname
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/02-06-whoami.jpg" alt="whoamihostname" width="400">
    <i>here:</i> username: labuser, host: ubuntu-lab
@@ -62,7 +62,7 @@ hostname
   (disk free -humanreadable)<br>
 
 ```
-df -h
+  df -h
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/02-07-df.jpg" alt="Disk Free" width="500">
 <br>
@@ -74,7 +74,7 @@ df -h
 - Determine memory usage (RAM - h for human readable):<br>
 
 ```
-free -h
+  free -h
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/02-08-free.jpg" alt="Free" width="500">
 <br>
@@ -86,9 +86,9 @@ free -h
 
 - Query system log entries (here the last 20)
 ```
-sudo journalctl -n 20
+  sudo journalctl -n 20
 ```
-Output will read: Date, Time, Hostname, Process/Service Name, Process ID, Message
+  Output will read: Date, Time, Hostname, Process/Service Name, Process ID, Message
 
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/02-09-journal.jpg" alt="System Logs" width="500">
 <br>
