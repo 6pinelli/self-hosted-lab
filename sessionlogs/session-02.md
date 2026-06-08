@@ -22,9 +22,8 @@ Session 2 actioned the following items:
 ```
    ip a
 ```
-\
-    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/session-02/screenshots/02-05-ip.jpg" alt="ip a" width="500">
-
+<br>
+    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/02-05-ip.jpg" alt="ip a" width="500">
 
 
 
