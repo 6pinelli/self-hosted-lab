@@ -1,0 +1,87 @@
+# Docker, First Container Install: NGINX
+
+Session 3 actioned the following items:
+
+## Installing Docker:
+- Installing Docker, a containerization platform will package applications into isolated unites (= containers).
+- This will prevent conflicts between applications, efficiency and offer portability if needed.
+- Docker Hub is a trusted source for app images/blueprints.
+
+1) Update Ubuntu if need be
+```
+  sudo apt update
+  sudo apt upgrade -y
+```
+
+2) With first installation on machine, create repository to receive always newest updates directly from docker
+```
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Architectures: $(dpkg --print-architecture)
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+
+sudo apt update
+```
+(source: <a href="https://docs.docker.com/engine/install/ubuntu" >Docker Installation Instructions</a>)
+
+3) Install Docker:
+```
+   sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+  This will install directly from Docker, not Ubuntu's repositories and offer better support (regular updates)
+<br>
+    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/03-01-DockInst.jpg" alt="Docker Install" width="500">
+
+- Verification of installation shows docker is installed and running:
+```
+# Active status shows docker is running:
+sudo systemctl status docker
+
+# Below command will show successful intallation by downloading a test image, running it in a container, and thereafter printing a confirmation message and exits\
+sudo docker run hello-world
+```
+
+    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/03-02-DockVer.jpg" alt="Install Verification" width="500">
+\
+
+
+## Installation of NGINX
+
+NGINX is an open-source software for webservers with funtions including reverse proxy, load balancing and HTTP caching.
+
+- Install:
+```
+docker pull nginx
+```
+- Start NGINX:\
+```
+docker run -d -p 8080:80 nginx
+```
+
+- Verify if App is running with "process status request":
+```
+docker ps
+```
+The image below shows the output. NGINX container is running with the container ID a3aa5e87116e having been created from the nginx image.
+It reflects teh command that running inside the container next, followed by creation time, current status, port mapping and the auto-generated name for the container.
+
+- Logs can per app can be requested showing each process for the app:
+The log will show time stamp of when the entry was generated, log level (severity, i.e. info, error, warning...), message containing the actual content as well as at times the source of the app generating the log.\
+```
+docker logs a3aa5e87116e
+
+```
+
+-
