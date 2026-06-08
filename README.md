@@ -32,5 +32,5 @@ self-hosted-lab/
 <hr> </hr>
 
 ## Lab Infrastructure
-Planned Architecture:
+Planned Architecture:\
 <img src="diagrams/architecture_v1.jpg" atl="planned architecture v1">
