@@ -54,18 +54,18 @@ sudo docker run hello-world
 ```
 
     <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/03-02-DockVer.jpg" alt="Install Verification" width="500">
-\
+
 
 
 ## Installation of NGINX
 
 NGINX is an open-source software for webservers with funtions including reverse proxy, load balancing and HTTP caching.
 
-- Install:
+1) Install:
 ```
 docker pull nginx
 ```
-- Start NGINX:\
+2) Run NGINX:\
 ```
 docker run -d -p 8080:80 nginx
 ```
@@ -77,11 +77,30 @@ docker ps
 The image below shows the output. NGINX container is running with the container ID a3aa5e87116e having been created from the nginx image.
 It reflects teh command that running inside the container next, followed by creation time, current status, port mapping and the auto-generated name for the container.
 
+3) Open in browser to test
+- Access in browser via IP and port
+
+4) Inspect an app
+
 - Logs can per app can be requested showing each process for the app:
 The log will show time stamp of when the entry was generated, log level (severity, i.e. info, error, warning...), message containing the actual content as well as at times the source of the app generating the log.\
 ```
 docker logs a3aa5e87116e
-
+#syntax: docker logs [container ID]
 ```
 
--
+5) Stop the container
+
+- Stop container:
+```
+docker stop a3aa5e87116e
+#syntax: docker stop [container ID]
+```
+Each time, a container session is started, a new container ID will be created, taking up space.
+It is recommended to remove container IDs (unless keeping for trouble shooting logs) to release the space.
+
+- Remove Container Space (rm = remove):
+```
+docker rm a3aa5e87116e
+#syntax: docker rm [container id]
+```
