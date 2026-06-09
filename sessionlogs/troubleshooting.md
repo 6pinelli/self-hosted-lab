@@ -6,10 +6,10 @@
   IP address can change when virtual machine is used with DHCP
   Either verify IP with every login, or set up static IP:
 
-  1.1) DHCP reservation on router:
+     1.1) DHCP reservation on router:
      log into router admin, find DHCP reservations or static leases, and bind VM MAC address to static IP
 
-  1.2) Netplan static IP on the M
+     1.2) Netplan static IP on the M
 
 ```
      sudo nano /etc/netplan/00-installer-config.yaml
@@ -22,7 +22,7 @@
 
     # press ctrl + x on keyport to exit, save changes with y
 
-sudo netplan apply
+     sudo netplan apply
 ```
 
 
@@ -32,7 +32,7 @@ sudo netplan apply
 ```
    timedatectl
 ```
-<img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/03-systemtimezone.png" alt="timezone" width="600">
+  <br>  <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/03-systemtimezone.png" alt="timezone" width="600">
 
 
 3) Change settings to have to avoid working with sudo command all the time:
@@ -50,7 +50,7 @@ sudo netplan apply
 <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/03-sudoall.png" alt="Sudo all" width="600">
 
 
-4) Typos
+4) Typos <br>
    Many errors simply occur due to typos - below example:
    docker pull ngNIx instead of docker pull ngINx
 
