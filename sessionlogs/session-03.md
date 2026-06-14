@@ -69,7 +69,7 @@ Session 3 actioned the following items:
 
 NGINX is an open-source software for webservers with funtions including reverse proxy, load balancing and HTTP caching.
 
-1) Install:
+1) Pull Image:
 ```
   docker pull nginx
 ```
@@ -77,6 +77,7 @@ NGINX is an open-source software for webservers with funtions including reverse 
 
 
 2) Run NGINX:
+Run command will install the app in a session container.
 ```
   docker run -d -p 8080:80 nginx
 ```
