@@ -33,4 +33,4 @@ self-hosted-lab/
 
 ## Lab Infrastructure
 Planned Architecture:\
-<img src="diagrams/architecture_v1.jpg" atl="planned architecture v1">
+<img src="diagrams/architecture_v2.jpg" atl="planned architecture v1">
