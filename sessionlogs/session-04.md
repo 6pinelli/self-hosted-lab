@@ -1,7 +1,7 @@
 # Pi-hole Docker Compose
 Session 4 actioned the following items:
 
-# Preparing Ubuntu
+## Preparing Ubuntu
 
 Modern Ubuntu Versions have a build in DNS caching "stub resolver" listening on port 53.
 Pi-hole, functioning as DNS sinkhole (blocking of unwanted content such as ads and trackers), would be prevented from listening on port 53.
@@ -34,7 +34,7 @@ Pi-hole, functioning as DNS sinkhole (blocking of unwanted content such as ads a
 
 
 
-# Deploying Pi-hole docker compose
+## Deploying Pi-hole docker compose
 
 Pi-hole acts as DNS resolver, ad-blocker, tracking blocker,.. - a sinkhole.
 
@@ -84,7 +84,7 @@ Pi-hole acts as DNS resolver, ad-blocker, tracking blocker,.. - a sinkhole.
 ```
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-05-composeps.png" alt="docker status" width="600">\
    
-# Test functionality of Pi-hole:
+## Test functionality of Pi-hole:
 
 1) Access through browser: http://[ip address VM]:8081
    If it loads to a pi-hole login page, Pi-hole is running correctly.
