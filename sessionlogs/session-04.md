@@ -28,7 +28,7 @@ Pi-hole, functioning as DNS sinkhole (blocking of unwanted content such as ads a
    systemctl restart systemd-resolved
 ```
 <br>
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-01-systemd.png" alt="Ubuntu DNS prep" width="600">\
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-01-systemd.png" alt="Ubuntu DNS prep" width="600">
 
    (source: <a href="https://docs.pi-hole.net/docker/tips-and-tricks/" >Pi-hole DNS 53 debug</a>)
 
@@ -45,7 +45,7 @@ Pi-hole acts as DNS resolver, ad-blocker, tracking blocker,.. - a sinkhole.
    cd ~/pihole                   # change directory into pihole directory
    sudo nano docker-compose.yml  #create docker compose file and write code/directions through nano editor
 ```
-      <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-02-pih1.png" alt="Pihole prep" width="600">\
+<br>      <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-02-pih1.png" alt="Pihole prep" width="600">
 
 
 2) Create docker compose - pay attention to spaces and possible typos, see troubleshoot log.
@@ -68,7 +68,7 @@ Pi-hole acts as DNS resolver, ad-blocker, tracking blocker,.. - a sinkhole.
       restart: unless-stopped
 
 ```
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-03-dockercomp.png" alt="Ubuntu DNS prep" width="600">\
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-03-dockercomp.png" alt="Ubuntu DNS prep" width="400">
 
 3) Run docker compose
 
@@ -76,13 +76,13 @@ Pi-hole acts as DNS resolver, ad-blocker, tracking blocker,.. - a sinkhole.
    docker compose up -d
 ```
 
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-04-dockup.png" alt="run pihole" width="600">\
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-04-dockup.png" alt="run pihole" width="600">
 
    Check if running:
 ```
    docker compose ps
 ```
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-05-composeps.png" alt="docker status" width="600">\
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-05-composeps.png" alt="docker status" width="600">
    
 ## Test functionality of Pi-hole:
 
@@ -96,8 +96,8 @@ Pi-hole acts as DNS resolver, ad-blocker, tracking blocker,.. - a sinkhole.
 ```
    Correct IP for google.com has been resolved. Dig query came back without any errors.
 
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-06-nslgoog.png" alt="nslookup" width="600">\
-   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-07-diggoog.png" alt="dig" width="600">\
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-06-nslgoog.png" alt="nslookup" width="500">
+   <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-07-diggoog.png" alt="dig" width="550">
 
 3) Check if known spam/tracker/ad domains are blocked: example doubleclick.net
 ```
