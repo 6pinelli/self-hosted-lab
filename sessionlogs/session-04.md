@@ -27,7 +27,7 @@ Pi-hole, functioning as DNS sinkhole (blocking of unwanted content such as ads a
 ```
    systemctl restart systemd-resolved
 ```
-
+<br>
    <img src="https://github.com/6pinelli/self-hosted-lab/blob/main/screenshots/04-01-systemd.png" alt="Ubuntu DNS prep" width="600">\
 
    (source: <a href="https://docs.pi-hole.net/docker/tips-and-tricks/" >Pi-hole DNS 53 debug</a>)
